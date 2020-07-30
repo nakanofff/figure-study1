@@ -1,0 +1,100 @@
+@charset "UTF-8";
+/* CSS Document */
+.figure1{
+	position: relative;
+	overflow: hidden;
+	width: 300px;
+	height: 200px;
+}
+.ca1{
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0, .6);
+	opacity: 0;
+	transition: 0.6s;
+}
+.figure1:hover .ca1{
+	opacity: 1;
+}
+
+.figure2{
+	position: relative;
+	overflow: hidden;
+	width: 300px;
+	height: 200px;
+	background-image: url("teian1.png");
+	background-size: cover;
+}
+.ca2{
+	position: absolute;
+	z-index: 2;
+	top: -100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.6);
+	transition: 0.6s;
+}
+.figure2:hover .ca2{
+	top: 0;
+}
+
+.figure3{
+	background-image: url("teian1.png");
+	background-size: cover;
+	position: relative;
+	overflow: hidden;
+	width: 300px;
+	height: 200px;
+}
+.ca3{
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	transition: 0.6s;
+	background-color: rgba(0,0,0,0.6);
+}
+.figure3:hover .ca3{
+	left: 0;
+}
+
+.figure4{
+	background-image: url("teian2.png");
+	background-size: cover;
+	width: 300px;
+	height: 200px;
+	position: relative;
+	overflow: hidden;
+}
+.ca4{
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.6);
+	transition: 0.6s;
+	opacity: 0;
+}
+.ca4 h3, .ca4 p{
+	position: absolute;
+	z-index: 3;
+	top: 0;
+	left: -100%;
+	transition: 0.6s;
+}
+.figure4:hover .ca4{
+	opacity: 1;
+}
+.figure4:hover .ca4 h3, .ca4 p{
+	left: 0;
+}
+
